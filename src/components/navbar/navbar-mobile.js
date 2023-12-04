@@ -11,8 +11,7 @@ export default function NavbarMobile() {
     const [isVisible, setVisibility] = useState(false)
 
     const changeVisibility = () => {
-        document.querySelectorAll("icon").forEach((el)=>{console.log(el.classList)})
-        document.body.style.overflow = (isVisible) ? "scroll" : "hidden";
+        document.body.style.overflowY = (isVisible) ? "scroll" : "hidden";
         setVisibility(!isVisible)
     }
     return (
@@ -42,7 +41,7 @@ export default function NavbarMobile() {
 
                 <div className={(isVisible) ? "show" : "hide"}  >
                     <div className="offcanvas bg-rose dark:bg-darkSlate">
-                        <div className="w-full flex mb-5 justify-end pe-7">
+                        <div className=" flex mb-5 justify-end pe-7">
 
                             <ThemeSwitch />
                         </div>

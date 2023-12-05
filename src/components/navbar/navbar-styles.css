@@ -1,0 +1,162 @@
+.nav-img{
+    position: relative;
+}
+.nav-img img{
+    
+    height: 50px;
+    margin-top: 5px;
+    transition: all 1s;
+    cursor: pointer;
+    filter: brightness(1.2);
+    animation: brightness-change 3s infinite;
+}
+@keyframes brightness-change {
+    0%{
+        filter: brightness(1.1);
+    }
+    50%{
+        filter: brightness(1.5);
+    }
+    100%{
+        filter: brightness(1.1);
+    }
+}
+.nav-img img:hover{
+    transform: scale(1.1);
+}
+.name{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+.switch{
+    position: relative;
+    cursor: pointer;
+    height: 30px;
+    width: 40px;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.switch2{
+    cursor: pointer;
+    right: -10px;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.switch1{
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    left: -10px;
+    width: 30px;
+    height: 30px;
+}
+.sun{
+    position: absolute;
+    z-index: 20;
+    top: 7px;
+    left: -4px;
+}
+.moon{
+    top: 7px;
+    right: -3px;
+    position: absolute;
+    z-index: 20;
+
+}
+.sun-show{
+    animation: sun-show-animation .5s;
+}
+.sun-hide{
+    animation: sun-hide-animation .5s;
+    opacity: 0;
+}
+@keyframes sun-show-animation {
+    0%{
+        opacity: 0;
+        rotate: 90deg;
+        padding-left: 10px;
+    }
+    100%{
+        opacity: 1;
+        padding: 0;
+    }
+}
+@keyframes sun-hide-animation {
+    0%{
+        opacity: 1;
+        padding: 0;
+    }
+    100%{
+        opacity: 0;
+        rotate: 180deg;
+        padding-left: 10px;
+    }
+}
+.moon-show{
+    animation: moon-show-animation .5s;
+}
+.moon-hide{
+    animation: moon-hide-animation .5s;
+    opacity: 0;
+}
+@keyframes moon-show-animation {
+    0%{
+        opacity: 0;
+        rotate: 180deg;
+        padding-right: 10px;
+    }
+    100%{
+        opacity: 1;
+        padding: 0;
+    }
+}
+@keyframes moon-hide-animation {
+    0%{
+        opacity: 1;
+
+    }
+    100%{
+        opacity: 0;
+        rotate: 90deg;
+    }
+}
+
+.offcanvas{
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    width: 100vw;
+    animation: offcanvas-show 1s;
+}
+.offcanvas-con{
+    overflow: hidden;
+}
+
+@keyframes offcanvas-show {
+    0%{
+        width: 0vw;
+    }
+    100%{
+        width: 100vw;
+    }
+}
+.icon{
+    animation: show 1s;
+    cursor: pointer;
+}
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

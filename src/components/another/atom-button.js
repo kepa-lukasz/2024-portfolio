@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import "./another-styles.css"
 export default function AtomButton({border, shadow, className, text, ...rest }) {
 
     return (
@@ -9,7 +9,7 @@ export default function AtomButton({border, shadow, className, text, ...rest }) 
                 <div className={border+  ' con p-1 rounded'} >
                     <div
                         {...rest}
-                        className={className + " button-top py-1 px-10 rounded-lg"}
+                        className={className + " button-top py-1 px-3 rounded-lg"}
                     >
                         {text}
                     </div>

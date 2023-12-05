@@ -1,4 +1,4 @@
-import Wrapper from "../../components/wrapper";
+import Wrapper from "../../components/another/wrapper";
 import About from "./about";
 import Stack from "./stack";
 import Top from "./top";

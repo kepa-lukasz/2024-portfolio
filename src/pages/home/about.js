@@ -1,7 +1,7 @@
 export default function About() {
     return (
 
-        <div>
+        <div style={{ height: "200px" }}>
             <p>about tutaj jest</p>
         </div>
 

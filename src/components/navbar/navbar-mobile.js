@@ -9,7 +9,7 @@ import { IoClose } from "react-icons/io5";
 export default function NavbarMobile() {
     const [isVisible, setVisibility] = useState(false)
     return (
-        <div>
+        <div >
             <div className="bg-rose dark:bg-darkSlate dark:text-white flex justify-end pe-10">
                 <div className=" py-2">
                     {
@@ -25,32 +25,30 @@ export default function NavbarMobile() {
 
             <div className={(isVisible) ? "show" : "hidden"} style={{ height: "70px" }} >
                 <div className="offcanvas bg-rose dark:bg-darkSlate">
-                    <div className="w-full flex mb-5 justify-between flex-wrap">
+                    <div className="w-full flex mb-5 justify-between">
 
                         <div className="ps-5 nav-img flex dark:text-white">
                             <img src={require("../../images/logo.png")} />
-                            
-                                <span className="ps-1 pt-4 text-2xl font-bold">Łukasz</span>
-                                <span className="pt-4 text-2xl font-thin">Kępa</span>
-                            
+
+
                         </div>
                         <ThemeSwitch />
                     </div>
 
                     <div className="w-full flex justify-center" >
-                        <div className=" w-min">
-
+                        <div className="w-full flex justify-center">
                             <AtomButton
+                                style={{ width: "120px" }}
                                 shadow="bg-black dark:bg-white "
                                 border="bg-white dark:bg-darkRed "
-                                className="px-10 dark:text-white bg-white dark:bg-darkRed "
+                                className="w-full dark:text-white bg-white dark:bg-darkRed "
                                 text="Home" />
                         </div>
                     </div>
                     <div className="w-full flex justify-center">
-                        <div className="w-min my-5">
-
+                        <div className="w-full flex justify-center my-5">
                             <AtomButton
+                                style={{ width: "120px" }}
                                 shadow="bg-black dark:bg-white "
                                 border="bg-white dark:bg-darkRed "
                                 className=" px-7 dark:text-white bg-white dark:bg-darkRed "
@@ -58,8 +56,9 @@ export default function NavbarMobile() {
                         </div>
                     </div>
                     <div className="w-full flex justify-center" >
-                        <div className="w-min">
+                        <div className="w-full flex justify-center">
                             <AtomButton
+                                style={{ width: "120px" }}
                                 shadow="bg-black dark:bg-white "
                                 border="bg-white dark:bg-darkRed "
                                 className="px-9 dark:text-white bg-white dark:bg-darkRed "

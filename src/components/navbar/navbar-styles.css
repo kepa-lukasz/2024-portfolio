@@ -1,6 +1,10 @@
 .nav-img{
     position: relative;
 }
+.mobile-img{
+    height: 50px;
+    padding-top: 0px;
+}
 .nav-img img{
     
     height: 50px;

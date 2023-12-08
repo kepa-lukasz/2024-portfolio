@@ -3,66 +3,93 @@ import AtomButton from "../another/atom-button"
 import { useState } from "react"
 import { TiThMenuOutline } from "react-icons/ti";
 import { IoClose } from "react-icons/io5";
-
+import { Link } from "react-router-dom";
 
 
 export default function NavbarMobile() {
+
     const [isVisible, setVisibility] = useState(false)
+
+    const changeVisibility = () => {
+        document.querySelectorAll("icon").forEach((el)=>{console.log(el.classList)})
+        document.body.style.overflow = (isVisible) ? "scroll" : "hidden";
+        setVisibility(!isVisible)
+    }
     return (
-        <div >
-            <div className="bg-rose dark:bg-darkSlate dark:text-white flex justify-end pe-10">
-                <div className=" py-2">
-                    {
-                        (isVisible) ?
-                            <IoClose className="icon" onClick={() => { setVisibility(!isVisible) }} style={{ height: "40px", width: "40px" }} />
-                            :
-                            < TiThMenuOutline className="pt-2 icon" onClick={() => { setVisibility(!isVisible) }} style={{ height: "35px", width: "35px" }} />
-                    }
+        <div className="bg-rose dark:bg-darkSlate w-full">
+            <div className="w-full dark:text-white flex justify-between" style={{ height: "70px" }}>
+
+                <div className="ps-7 nav-img flex dark:text-white">
+                    <Link to="" onClick={()=>{ setVisibility(false) ; document.body.style.overflow = "scroll"}}>
+                        <img src={require("../../images/logo.png")} />
+                    </Link>
+                </div>
+                <div className=" py-2 pe-5 flex">
+                    <div className="icon-holder bg-rose dark:bg-darkSlate bg-darkRed"></div>
+                    
+                        
+                            <IoClose className={(isVisible)? "icon show-icon" : "icon hide-icon"} onClick={changeVisibility} />
+                            
+                            < TiThMenuOutline className={(isVisible)? "icon hide-icon" : "icon show-icon"} onClick={changeVisibility}  />
+                    
+                    <div className="icon-holder bg-rose dark:bg-darkSlate"></div>
 
                 </div>
 
             </div>
-
-            <div className={(isVisible) ? "show" : "hidden"} style={{ height: "70px" }} >
-                <div className="offcanvas bg-rose dark:bg-darkSlate">
-                    <div className="w-full flex mb-5 justify-between">
-
-                        <div className="ps-5 nav-img flex dark:text-white">
-                            <img src={require("../../images/logo.png")} />
+            <div className="mobile-nav-con ">
 
 
+                <div className={(isVisible) ? "show" : "hide"}  >
+                    <div className="offcanvas bg-rose dark:bg-darkSlate">
+                        <div className="w-full flex mb-5 justify-end pe-7">
+
+                            <ThemeSwitch />
                         </div>
-                        <ThemeSwitch />
-                    </div>
 
-                    <div className="w-full flex justify-center" >
+                        <div className="w-full flex justify-center" >
+                            <div className="w-full flex justify-center">
+                                <Link to="" onClick={changeVisibility}>
+                                    <AtomButton
+                                        style={{ width: "120px" }}
+                                        shadow="bg-black dark:bg-white "
+                                        border="bg-white dark:bg-darkRed "
+                                        className="w-full dark:text-white bg-white dark:bg-darkRed "
+                                        text="Home" />
+                                </Link>
+                            </div>
+                        </div>
                         <div className="w-full flex justify-center">
-                            <AtomButton
-                                style={{ width: "120px" }}
-                                shadow="bg-black dark:bg-white "
-                                border="bg-white dark:bg-darkRed "
-                                className="w-full dark:text-white bg-white dark:bg-darkRed "
-                                text="Home" />
+                            <div className="w-full flex justify-center my-5">
+                                <AtomButton
+                                    style={{ width: "120px" }}
+                                    shadow="bg-black dark:bg-white "
+                                    border="bg-white dark:bg-darkRed "
+                                    className=" px-7 dark:text-white bg-white dark:bg-darkRed "
+                                    text="Co&nbsp;robię?" />
+                            </div>
                         </div>
-                    </div>
-                    <div className="w-full flex justify-center">
-                        <div className="w-full flex justify-center my-5">
-                            <AtomButton
-                                style={{ width: "120px" }}
-                                shadow="bg-black dark:bg-white "
-                                border="bg-white dark:bg-darkRed "
-                                className=" px-7 dark:text-white bg-white dark:bg-darkRed "
-                                text="Co&nbsp;robię?" />
+                        <div className="w-full flex justify-center" >
+                            <div className="w-full flex justify-center ">
+                                <AtomButton
+                                    style={{ width: "120px" }}
+                                    shadow="bg-black dark:bg-white "
+                                    border="bg-white dark:bg-darkRed "
+                                    className="px-9 dark:text-white bg-white dark:bg-darkRed "
+                                    text="Kontakt" />
+                            </div>
                         </div>
-                    </div>
-                    <div className="w-full flex justify-center" >
-                        <div className="w-full flex justify-center">
-                            <AtomButton
-                                style={{ width: "120px" }}
-                                shadow="bg-black dark:bg-white "
-                                border="bg-white dark:bg-darkRed "
-                                className="px-9 dark:text-white bg-white dark:bg-darkRed "
-                                text="Kontakt" />
+                        <div className="w-full flex justify-center" >
+                            <div className="w-full flex justify-center my-5">
+                                <Link to="colors" onClick={changeVisibility}>
+                                    <AtomButton
+                                        style={{ width: "120px" }}
+                                        shadow="bg-black dark:bg-white "
+                                        border="bg-white dark:bg-darkRed "
+                                        className="px-9 dark:text-white bg-white dark:bg-darkRed "
+                                        text="Colors" />
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>

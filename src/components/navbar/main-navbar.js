@@ -3,10 +3,10 @@ import NavbarMobile from "./navbar-mobile"
 export default function Navbar() {
     return (
         <div className="">
-            <div className="hidden sm:block">
+            <div className="hidden md:block">
                 <NavbarDesktop />
             </div>
-            <div className="sm:hidden ">
+            <div className="md:hidden " >
                 <NavbarMobile />
 
             </div>

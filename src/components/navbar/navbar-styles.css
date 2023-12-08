@@ -2,28 +2,15 @@
     position: relative;
 }
 .mobile-img{
-    height: 50px;
+    height: 80px;
     padding-top: 0px;
 }
 .nav-img img{
-    
-    height: 50px;
-    margin-top: 5px;
-    transition: all 1s;
+    padding-top: 5px;
+    height: 60px;
+    margin-top: 1px;
+    transition: all .5s;
     cursor: pointer;
-    filter: brightness(1.2);
-    animation: brightness-change 3s infinite;
-}
-@keyframes brightness-change {
-    0%{
-        filter: brightness(1.1);
-    }
-    50%{
-        filter: brightness(1.5);
-    }
-    100%{
-        filter: brightness(1.1);
-    }
 }
 .nav-img img:hover{
     transform: scale(1.1);
@@ -33,6 +20,15 @@
     top: 10px;
     left: 10px;
 }
+.switch-con{
+    margin-top: 20px;
+    height: 30px;
+    width: 60px;
+    padding-left: 10px;
+}
+.switch-con:hover .sun-show, .switch-con:hover .moon-show {
+    transform: scale(1.2);
+}
 
 
 .switch{
@@ -40,7 +36,6 @@
     cursor: pointer;
     height: 30px;
     width: 40px;
-    margin-top: 20px;
     margin-right: 30px;
 }
 
@@ -132,35 +127,91 @@
         rotate: 90deg;
     }
 }
-
-.offcanvas{
+.mobile-nav-con{
     height: 100vh;
-    position: absolute;
-    right: 0;
     width: 100vw;
-    animation: offcanvas-show 1s;
+    overflow: hidden;
+    position: absolute;
+
+}
+.offcanvas{
+    height: calc(100vh - 70px);
+    scroll-behavior: none;
+    height: 100vh;
+    right: 0;
+
+    
 }
 .offcanvas-con{
     overflow: hidden;
+}
+.show{
+    overflow: hidden; 
+    position: absolute;
+    width: 100vw;
+    animation: offcanvas-show 1s;
 }
 
 @keyframes offcanvas-show {
     0%{
         width: 0vw;
+
     }
     100%{
         width: 100vw;
     }
 }
-.icon{
-    animation: show 1s;
-    cursor: pointer;
+.hide{
+    /* opacity: 0; */
+    animation: hide-offcanvas .5s;
+    position: absolute;
+    width: 0vw;
+    overflow: hidden;
+
+    /* display: none; */
 }
-@keyframes show {
+@keyframes hide-offcanvas {
     0%{
-        opacity: 0;
+        width: 100vw;
+        display: block;
     }
     100%{
-        opacity: 1;
+        width: 0vw;
+        display: none;
+    }
+}
+.icon{
+    cursor: pointer;
+    
+}
+.show-icon{
+    animation: show-icon 1s;
+    width: 50px;
+    height: 50px;
+}
+.hide-icon{
+    animation: hide-icon 1s running;
+    width: 0px;
+    height: 50px;
+    
+}
+@keyframes show-icon {
+    0%{
+        width: 0px;
+        height: 50px;
+    }
+    100%{
+        width: 50px;
+        height: 50px;
+    }
+}
+@keyframes hide-icon {
+    0%{
+        width: 50px;
+        height: 50px;
+    }
+    100%{
+        width: 0px;
+        height: 50px;
     }
 }

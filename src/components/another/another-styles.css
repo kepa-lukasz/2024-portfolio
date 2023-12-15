@@ -12,8 +12,8 @@
     transition: 1s;
 }
 .button-hover:hover, .button:target{
-    filter: brightness(1.3);
-    transform: scale(1.15);
+    /* filter: brightness(1.3); */
+    transform: scale(1.2);
 }
 .button-hover:not(:hover) .shadow1{
     animation: s1-animation-leave .7s ;

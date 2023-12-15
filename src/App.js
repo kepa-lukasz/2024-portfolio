@@ -8,8 +8,8 @@ import Home from './pages/home/main-home';
 export default function App() {
   return (
     <BrowserRouter>
+      <div className=' p-0 m-0'>
       <Navbar />
-      <div className='w-full p-0 m-0'>
         <Routes>
           <Route path="colors" element={<Colors />} />
           <Route path="" element={<Home />} />

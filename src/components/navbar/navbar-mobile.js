@@ -24,7 +24,7 @@ export default function NavbarMobile() {
                         <img src={require("../../images/logo.png")} />
                     </Link>
                 </div>
-                <div className=" py-2 pe-5 flex">
+                <div className=" py-2 flex">
                     <div className="icon-holder bg-rose dark:bg-darkSlate bg-darkRed"></div>
                     
                         
@@ -37,7 +37,7 @@ export default function NavbarMobile() {
                 </div>
 
             </div>
-            <div className="mobile-nav-con ">
+            <div className="mobile-nav-con w-full">
 
 
                 <div className={(isVisible) ? "show" : "hide"}  >

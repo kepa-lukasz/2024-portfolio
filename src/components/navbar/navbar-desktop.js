@@ -15,7 +15,7 @@ export default function NavbarDesktop() {
             <Wrapper
                 classList="dark:bg-darkSlate bg-rose  "
                 child={
-                    <div className="flex justify-between">
+                    <div className="flex justify-between  w-full" style={{maxWidth: "2100px"}}>
 
                         <div className=" nav-img ps-10 flex dark:text-white ">
                             <Link to="/">
@@ -58,8 +58,9 @@ export default function NavbarDesktop() {
                                         text="Kolory" />
                                 </Link>
                             </div>
+                            
                         </div>
-                        <div className="flex justify-end pe-10">
+                        <div className="flex justify-end">
                             <ThemeSwitch />
                         </div>
 

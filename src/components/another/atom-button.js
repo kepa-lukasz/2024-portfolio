@@ -1,21 +1,26 @@
 import "./another-styles.css"
-export default function AtomButton({border, shadow, className, text, ...rest }) {
+import React from "react"
+import { useRef } from "react"
+const AtomButton = ({ border, shadow, className, text, ...rest }) => {
+
+    const button = useRef()
 
     return (
-        <div className='button-hover rounded-lg p-0 m-0'>
-            <button className='  m-0 p-0 rounded-lg'>
-                <div className={shadow + '  shadow1 '}></div>
-                <div className={shadow + ' shadow2 '}></div>
-                <div className={border+  ' con p-1 rounded'} >
-                    <div
-                        {...rest}
-                        className={className + " button-top py-1 px-3 rounded-lg"}
-                    >
-                        {text}
-                    </div>
-                </div>
-            </button>
-        </div>
+            <button ref={button} className=' atom-button p-1 px-3  m-0 rounded-lg'
+                onMouseEnter={() => {
+                    button.current.classList.add("button-hover")
+                    button.current.classList.remove("button-after-hover")
+                }}
+                onMouseLeave={(ev) => {
+                    button.current.classList.add("button-after-hover")
+                    button.current.classList.remove("button-hover")
+                }}
+            >
+                <p className="bg-rose dark:bg-darkSlate" >
+                    {text}
+                </p>
 
+            </button>
     )
 }
+export default AtomButton;

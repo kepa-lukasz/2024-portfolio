@@ -7,9 +7,10 @@ import { RiJavascriptFill } from "react-icons/ri";
 
 export default function Stack() {
     return (
-        <div>
+        <div  style={{height: "100vh"}}>
             <h2 className="text-center text-4xl my-2 font-bold">Co potrafię</h2>
             <div className="underline bg-darkGreen dark:bg-lightLemon"></div>
+                <p className="bg-success section">tutaj</p>
             <div className="flex justify-center px-2 mt-2">
 
                 <div className="w-full flex flex-wrap justify-center mb-10">

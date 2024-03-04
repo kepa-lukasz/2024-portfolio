@@ -15,8 +15,8 @@
     top: -50%;
     rotate: 45deg;
     content: "";
-    border-top: 3px solid red;
-    border-right: 3px solid red;
+    border-bottom: 3px solid red;
+    border-left: 3px solid red;
     position: absolute;
     height: 200%;
     aspect-ratio: 1/1;
@@ -27,8 +27,8 @@
     top: -50%;
     rotate: -45deg;
     content: "";
-    border-left: 3px solid red;
-    border-top: 3px solid red;
+    border-right: 3px solid red;
+    border-bottom: 3px solid red;
     position: absolute;
     height: 200%;
     aspect-ratio: 1/1;
@@ -65,8 +65,8 @@
     top: -50%;
     rotate: 45deg;
     content: "";
-    border-left: 3px solid red;
-    border-bottom: 3px solid red;
+    border-right: 3px solid red;
+    border-top: 3px solid red;
     position: absolute;
     height: 200%;
     aspect-ratio: 1/1;
@@ -77,8 +77,8 @@
     top: -50%;
     rotate: -45deg;
     content: "";
-    border-bottom: 3px solid red;
-    border-right: 3px solid red;
+    border-top: 3px solid red;
+    border-left: 3px solid red;
     position: absolute;
     height: 200%;
     aspect-ratio: 1/1;
@@ -100,8 +100,12 @@
         right: 50%
     }
 }
-.atom-button p{
+
+.atom-button:hover p{
     text-decoration: underline;
+}
+.atom-button p{
+    text-decoration: none;
     border-radius: 5px;
     padding: 2px 5px;
     z-index: 10;

@@ -2,14 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.underline{
+
+.underline {
     width: 100px;
     height: 10px;
     margin: auto;
     border-radius: 10px;
-  }
+}

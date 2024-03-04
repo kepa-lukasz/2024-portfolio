@@ -1,37 +1,49 @@
-.nav-img{
+.nav-img {
     position: relative;
 }
-.mobile-img{
-    height: 80px;
+nav{
+    position: fixed !important;
+    width: 100%;
+    top:0px;
+}
+
+.mobile-img {
+    height: 70px;
     padding-top: 0px;
 }
-.nav-img img{
+
+.nav-img img {
     padding-top: 5px;
-    height: 60px;
+    height: 50px;
     margin-top: 1px;
     transition: all .5s;
     cursor: pointer;
 }
-.nav-img img:hover{
+
+.nav-img img:hover {
     transform: scale(1.1);
 }
-.name{
+
+.name {
     position: absolute;
     top: 10px;
     left: 10px;
 }
-.switch-con{
-    margin-top: 20px;
+
+.switch-con {
+    margin-top: 15px;
     height: 30px;
     width: 60px;
     padding-left: 10px;
 }
-.switch-con:hover .sun-show, .switch-con:hover .moon-show {
+
+.switch-con:hover .sun-show,
+.switch-con:hover .moon-show {
     transform: scale(1.2);
 }
 
 
-.switch{
+.switch {
     position: relative;
     cursor: pointer;
     height: 30px;
@@ -39,7 +51,7 @@
     margin-right: 30px;
 }
 
-.switch2{
+.switch2 {
     cursor: pointer;
     right: -10px;
     content: "";
@@ -48,7 +60,8 @@
     width: 30px;
     height: 30px;
 }
-.switch1{
+
+.switch1 {
     cursor: pointer;
     content: "";
     position: absolute;
@@ -57,160 +70,150 @@
     width: 30px;
     height: 30px;
 }
-.sun{
+
+.sun {
     position: absolute;
     z-index: 20;
     top: 7px;
     left: -4px;
 }
-.moon{
+
+.moon {
     top: 7px;
     right: -3px;
     position: absolute;
     z-index: 20;
 
 }
-.sun-show{
+
+.sun-show {
     animation: sun-show-animation .5s;
 }
-.sun-hide{
+
+.sun-hide {
     animation: sun-hide-animation .5s;
     opacity: 0;
 }
+
 @keyframes sun-show-animation {
-    0%{
+    0% {
         opacity: 0;
         rotate: 90deg;
         padding-left: 10px;
     }
-    100%{
+
+    100% {
         opacity: 1;
         padding: 0;
     }
 }
+
 @keyframes sun-hide-animation {
-    0%{
+    0% {
         opacity: 1;
         padding: 0;
     }
-    100%{
+
+    100% {
         opacity: 0;
         rotate: 180deg;
         padding-left: 10px;
     }
 }
-.moon-show{
+
+.moon-show {
     animation: moon-show-animation .5s;
 }
-.moon-hide{
+
+.moon-hide {
     animation: moon-hide-animation .5s;
     opacity: 0;
 }
+
 @keyframes moon-show-animation {
-    0%{
+    0% {
         opacity: 0;
         rotate: 180deg;
         padding-right: 10px;
     }
-    100%{
+
+    100% {
         opacity: 1;
         padding: 0;
     }
 }
+
 @keyframes moon-hide-animation {
-    0%{
+    0% {
         opacity: 1;
 
     }
-    100%{
+
+    100% {
         opacity: 0;
         rotate: 90deg;
     }
-}
-.mobile-nav-con{
-    height: 100vh;
-    overflow: hidden;
-    position: absolute;
 
 }
-.offcanvas{
-    height: calc(100vh - 70px);
-    scroll-behavior: none;
-    height: 100vh;
-    right: 0;
 
-    
-}
-.offcanvas-con{
-    overflow: hidden;
-}
-.show{
-    overflow: hidden; 
-    position: absolute;
-    width: 100vw;
-    animation: offcanvas-show 1s;
-}
-
-@keyframes offcanvas-show {
-    0%{
-        width: 0vw;
-
-    }
-    100%{
-        width: 100vw;
-    }
-}
-.hide{
-    /* opacity: 0; */
-    animation: hide-offcanvas .5s;
-    position: absolute;
-    width: 0vw;
-    overflow: hidden;
-
-    /* display: none; */
-}
-@keyframes hide-offcanvas {
-    0%{
-        width: 100vw;
-        display: block;
-    }
-    100%{
-        width: 0vw;
-        display: none;
-    }
-}
-.icon{
+.icon {
     cursor: pointer;
-    
+
 }
-.show-icon{
+
+.show-icon {
     animation: show-icon 1s;
     width: 50px;
     height: 50px;
 }
-.hide-icon{
+
+.hide-icon {
     animation: hide-icon 1s running;
     width: 0px;
     height: 50px;
-    
+
 }
+
 @keyframes show-icon {
-    0%{
+    0% {
         width: 0px;
         height: 50px;
     }
-    100%{
+
+    100% {
         width: 50px;
         height: 50px;
     }
 }
+
 @keyframes hide-icon {
-    0%{
+    0% {
         width: 50px;
         height: 50px;
     }
-    100%{
+
+    100% {
         width: 0px;
         height: 50px;
     }
+}
+
+.navbar-toggler {
+    background-color: #fff !important;
+}
+
+.offcanvas-body {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav {
+    height: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+}
+.current{
+    border-bottom: 3px solid red !important;
 }

@@ -5,6 +5,7 @@ nav{
     position: fixed !important;
     width: 100%;
     top:0px;
+    z-index: 1000;
 }
 
 .mobile-img {

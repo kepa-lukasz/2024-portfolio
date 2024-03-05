@@ -30,7 +30,7 @@ function OffcanvasExample() {
                 }
 
             })
-        }, { rootMargin: "0px 0px -15% 0px" })
+        }, { rootMargin: "0px 0px -20% 0px" })
         sections.forEach(el => { observer.observe(el) })
     }, [])
     useEffect(() => {
@@ -40,7 +40,7 @@ function OffcanvasExample() {
                 el.current.classList.remove("current")
             }
         })
-
+        
         refList[webPosition].current.classList.add("current")
 
     }, [webPosition])

@@ -1,6 +1,6 @@
 import Wrapper from "../components/another/wrapper";
-import About from "./home/about";
-import Stack from "./home/stack";
+import Projects from "./projects/projects";
+import Stack from "./stack/stack";
 import Top from "./home/top";
 
 const Pages = () => {
@@ -14,7 +14,7 @@ const Pages = () => {
             <Wrapper
             id="projects"
             className={"bg-fiolet dark:bg-darkBlue"}
-            child = {<About/>}
+            child = {<Projects/>}
             />
             <Wrapper
             id="contact"

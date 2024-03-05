@@ -1,0 +1,22 @@
+:root{
+    --card-color : red;
+}
+.project-card{
+    transition: 0.25s;
+}
+.project-card:hover{
+    transition: 0.25s;
+}
+.content{
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.25s;
+    background-color: var(--card-color);
+    border-radius: 7px;
+}
+.project-card:hover .content{
+    transition: 0.25s;
+    opacity: 1;
+    
+}

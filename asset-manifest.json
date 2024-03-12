@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/2024-portfolio/static/css/main.e775f20f.css",
-    "main.js": "/2024-portfolio/static/js/main.045125ed.js",
-    "static/media/wakacje.jpg": "/2024-portfolio/static/media/wakacje.b27030ec0b08681b6535.jpg",
-    "static/media/web.jpg": "/2024-portfolio/static/media/web.b3b13b4afc60e08588bb.jpg",
-    "static/media/mozg.jpg": "/2024-portfolio/static/media/mozg.5a866def9985158ee160.jpg",
+    "main.js": "/2024-portfolio/static/js/main.eea256e7.js",
+    "static/media/wakacje.avif": "/2024-portfolio/static/media/wakacje.29d7f60af8e06421873d.avif",
     "static/media/logo.png": "/2024-portfolio/static/media/logo.3c48f731d4d23819c2ff.png",
-    "static/media/zhrjpg.jpg": "/2024-portfolio/static/media/zhrjpg.df3527255b9f3b0356b4.jpg",
-    "static/media/logocel194.jpg": "/2024-portfolio/static/media/logocel194.a0b9716917b561878a35.jpg",
-    "static/media/pilka.jpg": "/2024-portfolio/static/media/pilka.b57d7bf536e7f4d40d73.jpg",
-    "static/media/logoportfolio.png": "/2024-portfolio/static/media/logoportfolio.71de7e86d149b4273b93.png",
-    "static/media/logotechsquare.png": "/2024-portfolio/static/media/logotechsquare.d9b7b026f6a89fdec5de.png",
+    "static/media/web.avif": "/2024-portfolio/static/media/web.ea1368931d44e2915161.avif",
+    "static/media/mozg.avif": "/2024-portfolio/static/media/mozg.fcf5360d47db4164b10c.avif",
+    "static/media/logocel194.avif": "/2024-portfolio/static/media/logocel194.34ddabbc36866ca49727.avif",
+    "static/media/zhrjpg.avif": "/2024-portfolio/static/media/zhrjpg.6aad2aed0d6d1106004d.avif",
+    "static/media/pilka.avif": "/2024-portfolio/static/media/pilka.214ea937579737afb29c.avif",
+    "static/media/logoportfolio.webp": "/2024-portfolio/static/media/logoportfolio.f6ac7b92541c452cc1ff.webp",
+    "static/media/klimat.webp": "/2024-portfolio/static/media/klimat.5a04d5d34c8acd571db2.webp",
+    "static/media/logotechsquare.webp": "/2024-portfolio/static/media/logotechsquare.e06c8aaea37035ce48ec.webp",
     "index.html": "/2024-portfolio/index.html",
     "main.e775f20f.css.map": "/2024-portfolio/static/css/main.e775f20f.css.map",
-    "main.045125ed.js.map": "/2024-portfolio/static/js/main.045125ed.js.map"
+    "main.eea256e7.js.map": "/2024-portfolio/static/js/main.eea256e7.js.map"
   },
   "entrypoints": [
     "static/css/main.e775f20f.css",
-    "static/js/main.045125ed.js"
+    "static/js/main.eea256e7.js"
   ]
 }

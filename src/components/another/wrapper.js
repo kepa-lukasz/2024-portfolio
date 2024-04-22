@@ -1,4 +1,4 @@
-export default function Wrapper({ className, child }) {
+const Wrapper = ({ className, child }) => {
 
     return (
         <div className={className + " flex justify-center w-full text-black dark:text-white"} >
@@ -8,3 +8,5 @@ export default function Wrapper({ className, child }) {
         </div>
     )
 }
+
+export default Wrapper

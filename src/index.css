@@ -9,8 +9,19 @@
 }
 
 .underline {
-    width: 100px;
+    width: 0px;
     height: 10px;
-    margin: auto;
     border-radius: 10px;
+}
+.underline-animation{
+    width: 150px;
+    animation: underline-appear 0.5s;
+}
+@keyframes underline-appear {
+    from{
+        width: 0px;
+    }
+    to{
+        width: 150px;
+    }
 }

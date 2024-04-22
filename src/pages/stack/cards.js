@@ -2,7 +2,7 @@ import { Card } from "flowbite-react"
 import "./cards.css"
 const StackCard = ({ icon, description, name, color }) => {
     return (
-        <div className="col-10 col-md-6 col-xl-4 px-0 px-md-3 my-3">
+        <div data-aos-once="true" data-aos="fade-up" className="col-11 col-sm-6  col-lg-4 col-xl-3 px-0 px-md-3 my-3 px-3 md:px-0">
 
             <Card className="h-full stack-card bg-rose dark:bg-darkSlate b-darkSlate" style={{ "--card-color": color }}>
                 <div style={{ zIndex: 5, position: "relative" }}>

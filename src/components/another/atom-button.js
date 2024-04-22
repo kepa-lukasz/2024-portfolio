@@ -1,14 +1,9 @@
 import "./another-styles.css"
-import React, { useEffect } from "react"
+import React from "react"
 import { useRef } from "react"
-const AtomButton = ({ border, shadow, className, text, ...rest }) => {
+const AtomButton = ({ border, shadow, className, text}) => {
 
     const button = useRef()
-    useEffect(()=>{
-        console.log(button.current.after)
-
-    }, [])
-
     return (
             <button ref={button} className='dark:text-white button-after-hover atom-button p-1 px-3  m-0 rounded-lg'
                 style={{maxHeight : "36px",}}
@@ -21,7 +16,7 @@ const AtomButton = ({ border, shadow, className, text, ...rest }) => {
                     button.current.classList.remove("button-hover")
                 }}
             >
-                <p className="dark:bg-darkSlate bg-lightPink" >
+                <p className="dark:bg-darkBlue bg-lightPink" >
                     {text}
                 </p>
 

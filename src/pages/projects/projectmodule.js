@@ -1,25 +1,33 @@
-import { Card, Button } from "flowbite-react"
+import { Card} from "react-bootstrap"
+import AtomButton from "../../components/another/atom-button"
 import "./projects.css"
-const ProjectCard = ({name, link, image, color }) => {
-    image = "cel194.jpg"
+const ProjectCard = ({ alt, name, link, background, color, logo, alert, ...rest }) => {
     return (
 
-        <div className="col-12 col-md-6 col-xl-3 my-3 p-0 p-5 mx-0">
-            <Card 
-            className="h-full w-full project-card bg-rose dark:bg-darkSlate b-darkSlate" 
-            style={{backgroundImage : `url(images/${image})`}}
+        <div data-aos-once="true" data-aos="fade-up" className="card-con py-4 mx-0">
+            <Card
+                {...rest}
+                className="h-full h-100 w-full project-card bg-rose dark:bg-darkSlate b-darkSlate p-6"
+                style={{ background: background }}
             >
-                <div className="content text-center d-flex justify-content-center flex-wrap pt-10"
-                style={{ "--card-color": color }}
-                >
-                    <h3 className="w-full pb-5 text-white">{name}</h3>
-                    <div>
+                <div className="logo px-3">
+                    <img src={logo} alt={alt}/>
+                </div>
 
-                    <Button>Sprawdź</Button>
+                <div className="content text-center d-flex justify-content-center flex-wrap pt-10 px-3"
+                    style={{ "--card-color": color }}
+                >
+                    <h4 className="w-full pb-2 text-white">{name}</h4>
+                    <p className="text-danger">{alert}</p>
+                    <div className=" p-1 px-2 rounded bg-lightPink dark:bg-darkBlue" style={{maxHeight : "43px"}}>
+                        <a href={link} className="text-black">
+
+                            <AtomButton text="Zobacz" />
+                        </a>
                     </div>
                 </div>
 
-                
+
             </Card>
         </div>
 

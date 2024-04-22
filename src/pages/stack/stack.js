@@ -1,4 +1,3 @@
-import ProgressBar from "../../components/another/progress-bar";
 
 import { FaBootstrap, FaReact, FaUniversalAccess } from "react-icons/fa6";
 import { SiPhp, SiMysql, SiDotnet, SiWordpress, SiTailwindcss } from "react-icons/si";
@@ -6,13 +5,15 @@ import { RiJavascriptFill } from "react-icons/ri";
 import StackCard from "./cards";
 
 
-export default function Stack() {
+const  Stack = () => {
     return (
-        <div className="section" style={{height: "100vh"}}>
-            <h2 className="dark:text-white text-center text-4xl my-4 font-bold">Co potrafię</h2>
-            <div className="underline bg-darkGreen dark:bg-lightLemon"></div>
-                {/* <p className="bg-success section">tutaj</p> */}
-            <div className="flex justify-center px-2 mt-2">
+        <div className="w-full" style={{maxWidth : "1900px"}} >
+            <p id="skills" ></p>
+            <h1 className="pt-12 ms-6 dark:text-white ps-4 text-4xl my-4 font-bold">Umiejętności</h1>
+                <div className="underline ms-12 bg-darkGreen dark:bg-lightLemon mb-3"></div>
+                <h2 className="ms-6 ps-4 fs-5 dark:text-white">W tej sekcji znajdują się technologie, z którymi miałem okazję pracować</h2>
+
+            <div className="flex mt-2 px-0 px-md-4 mx-1 justify-content-center">
 
                 <div className="w-full flex flex-wrap justify-center mb-10">
                     <StackCard color="cadetblue" icon={<FaUniversalAccess size={40} />} description="Web Content Accessibility Guidelines 2.2 to normy poprawiające dostępność treści online dla różnorodnych użytkowników, kładące nacisk na inkluzję i łatwy dostęp do informacji." name="WCAG 2.2"  />
@@ -31,3 +32,4 @@ export default function Stack() {
         </div>
     )
 }
+export default Stack

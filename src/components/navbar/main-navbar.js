@@ -1,75 +1,43 @@
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+
+import {Container, Nav, Navbar, Offcanvas} from 'react-bootstrap';
 
 import "./navbar-styles.css"
 
-import { Link } from 'react-router-dom';
 import ThemeSwitch from './theme-switch';
 import AtomButton from '../another/atom-button';
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 
-function OffcanvasExample() {
-    const home = useRef()
-    const projects = useRef()
-    const contact = useRef()
-    const refList = [home, projects, contact]
-    const [webPosition, setwebPosition] = useState(0);
-    useEffect(() => {
-        const sections = document.querySelectorAll(".section");
-        const sections_array = Array.from(sections);
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    setwebPosition(sections_array.indexOf(entry.target))
-
-                }
-
-            })
-        }, { rootMargin: "0px 0px -20% 0px" })
-        sections.forEach(el => { observer.observe(el) })
-    }, [])
-    useEffect(() => {
-        console.log(webPosition)
-        refList.forEach(el => {
-            if (el.current) {
-                el.current.classList.remove("current")
-            }
-        })
-        
-        refList[webPosition].current.classList.add("current")
-
-    }, [webPosition])
+const NavBar = () => {
+    const [show, setShow] = useState(false);
     return (
+
         <>
 
             <Navbar expand="md" className="dark:text-white dark:bg-darkBlue bg-rose border-bottom"
             >
-                <Container fluid>
+                <Container className='w-full'>
                     <Navbar.Brand href="#">
                         <div className=" nav-img flex dark:text-white ">
-                            <a href="#home">
-                                <img src={require("../../images/logo.png")} />
+                            <a href="#projects">
+                                <img src={require("../../images/logo.png")} alt="logotyp strony, czyli kwadrat z literą Ł"/>
                             </a>
 
 
                         </div>
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
+                    <Navbar.Toggle onClick={()=>{setShow(true)}} aria-controls={`offcanvasNavbar-expand-md`} />
                     <Navbar.Offcanvas
-                        className='dark:text-white'
+                        show={show} 
+                        onHide={()=>{setShow(false)}}
+                        className='dark:text-white dark:bg-darkBlue'
                         id={`offcanvasNavbar-expand-md`}
                         aria-labelledby={`offcanvasNavbarLabel-expand-md`}
                         placement="end"
                     >
-                        <Offcanvas.Header closeButton>
+                        <Offcanvas.Header className='bg-rose' closeButton >
                             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-md`}>
                                 <div className=" nav-img ps-10 flex dark:text-white ">
-                                    <a to="/">
+                                    <a to="#projects" alt="logotyp strony, czyli kwadrat z literą Ł">
                                         <img src={require("../../images/logo.png")} />
                                     </a>
 
@@ -77,26 +45,26 @@ function OffcanvasExample() {
                             </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
-                            <Nav className="justify-content-center gap-3 flex-grow-1 align-items-start text-start">
+                            <Nav className=" justify-content-center gap-3 flex-grow-1 align-items-start text-start">
                                 <div className="d-block d-md-none w-full d-flex justify-content-center" >
                                     <ThemeSwitch />
                                 </div>
 
-                                <Nav.Link href="#home" ref={home} className='home w-full md:w-fit dark:text-white justify-content-center d-flex'>
-                                    <AtomButton text="Home" />
-
-                                </Nav.Link>
-
-
-                                <Nav.Link href="#projects" ref={projects} className=' w-full md:w-fit dark:text-white justify-content-center d-flex'>
+                                <a onClick={()=>{setShow(false)}} href="#projects" className='pt-1 text-black m-auto m-md-0'>
                                     <AtomButton text="Projekty" />
+                                </a>
 
-                                </Nav.Link>
+                                <a onClick={()=>{setShow(false)}} href="#skills" className='pt-1 text-black  m-auto m-md-0'>
+                                    <AtomButton text="Umiejętności" />
+                                </a>
 
+                                <a onClick={()=>{setShow(false)}} href="#hobby" className='pt-1 text-black  m-auto m-md-0'>
+                                    <AtomButton text="Hobby" />
+                                </a>
 
-                                <Nav.Link href="#contact" ref={contact} className='contact w-full md:w-fit dark:text-white justify-content-center d-flex'>
+                                <a onClick={()=>{setShow(false)}} href="#contact" className='pt-1 text-black  m-auto m-md-0'>
                                     <AtomButton text="Kontakt" />
-                                </Nav.Link>
+                                </a>
 
                             </Nav>
                             <div className="d-none d-md-block" >
@@ -111,4 +79,4 @@ function OffcanvasExample() {
     );
 }
 
-export default OffcanvasExample;
+export default NavBar;

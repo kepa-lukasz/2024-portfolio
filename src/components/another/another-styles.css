@@ -6,7 +6,6 @@
     z-index: 1;
 }
 .button-hover:hover{
-
     transform: scale(1.15);
 }
 .button-hover::after{
@@ -101,9 +100,6 @@
     }
 }
 
-.atom-button:hover p{
-    text-decoration: underline;
-}
 .atom-button p{
     text-decoration: none;
     border-radius: 5px;

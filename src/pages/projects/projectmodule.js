@@ -18,7 +18,7 @@ const defaultOptions = {
 const ProjectCard = ({ alt, name, link, background, color, logo, alert, ...rest }) => {
     return (
 
-        <div data-aos-once="true" data-aos="fade-up" className="card-con py-4 mx-0">
+        <div data-aos-once="true" data-aos="fade-up" className="card-con py-4 mx-0 mb-5">
             <Tilt options={defaultOptions} className="h-100">
 
                 <Card
@@ -35,7 +35,7 @@ const ProjectCard = ({ alt, name, link, background, color, logo, alert, ...rest 
                     >
                         <h4 className="w-full pb-2 text-white">{name}</h4>
                         <p className="text-danger">{alert}</p>
-                        <div className=" p-1 px-2 rounded bg-lightPink dark:bg-darkBlue" style={{ maxHeight: "43px" }}>
+                        <div className=" p-1 px-2 rounded bg-fiolet dark:bg-darkBlue" style={{ maxHeight: "43px" }}>
                             <a href={link} className="text-black">
 
                                 <AtomButton text="Zobacz" />

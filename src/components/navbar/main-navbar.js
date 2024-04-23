@@ -13,7 +13,7 @@ const NavBar = () => {
 
         <>
 
-            <Navbar expand="md" className="dark:text-white dark:bg-darkBlue bg-rose border-bottom"
+            <Navbar expand="lg" className="dark:text-white dark:bg-darkBlue bg-rose border-bottom"
             >
                 <Container className='w-full'>
                     <Navbar.Brand href="#">
@@ -53,6 +53,11 @@ const NavBar = () => {
                                 <a onClick={()=>{setShow(false)}} href="#projects" className='pt-1 text-black m-auto m-md-0'>
                                     <AtomButton text="Projekty" />
                                 </a>
+
+                                <a onClick={()=>{setShow(false)}} href="#aboutme" className='pt-1 text-black m-auto m-md-0'>
+                                    <AtomButton text="O mnie" />
+                                </a>
+
 
                                 <a onClick={()=>{setShow(false)}} href="#skills" className='pt-1 text-black  m-auto m-md-0'>
                                     <AtomButton text="Umiejętności" />

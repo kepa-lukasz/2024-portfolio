@@ -88,3 +88,39 @@
         width: 100%;
     }
 }
+
+.square-con{
+    position: relative;
+    overflow: hidden;
+}
+.square{
+    width: 20vw;
+    aspect-ratio: 1/1;
+    border: 1px solid white;
+    position: absolute;
+    border-radius: 50%;
+    max-width: 300px;
+}
+.square:nth-child(1){
+    top: -10% !important;
+    right: 0;
+}
+.square:nth-child(2){
+    bottom: -10% !important;
+    right: 20%;
+}
+.square:nth-child(3){
+    top: 5% !important;
+    right: 40%;
+}
+.square:nth-child(4){
+    bottom: 20% !important;
+    left: -2vw;
+}
+.square:nth-child(5){
+    bottom: -10% !important;
+    left: 20%;
+}.square:nth-child(6){
+    bottom: 15% !important;
+    right: -10%;
+}

@@ -54,7 +54,16 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="w-100" style={{ maxWidth: "1900px" }}>
+        <div className="w-100 square-con" style={{ maxWidth: "1900px" }}>
+            <div className="squares d-none d-md-block">
+
+                <div className="square"></div>
+                <div className="square"></div>
+                <div className="square"></div>
+                <div className="square"></div>
+                <div className="square"></div>
+                <div className="square"></div>
+            </div>
             <p id="contact"></p>
             <h1 className="pt-12 ms-6 dark:text-white ps-4 text-4xl my-4 font-bold">Kontakt</h1>
             <div className="underline ms-12 bg-darkGreen dark:bg-lightLemon mb-3"></div>
@@ -65,6 +74,7 @@ const ContactForm = () => {
                 <form className="mx-5  dark:text-white dark:bg-darkGrey bg-fiolet pt-4 px-1 px-sm-4 rounded-3 w-100"
                     ref={form}
                     onSubmit={sendEmail}
+                    style={{zIndex: 10}}
                 >
                     <div className="w-100 d-flex flex-wrap " >
                         <div class="mb-3 col-12 col-md-6 px-2">
@@ -108,12 +118,12 @@ const ContactForm = () => {
                         }>
                             <AtomButton disabled={button_clicked} text="Wyślij wiadomość" />
                         </div>
-                            <p className={(email_sended == 1) ? "fail_info" : "none"}>
-                                Skontaktuj się drogą mailową na<br/>
-                                <a className="fs-5" href="mailto:lukaszkepa2003@gmail.com">
-                                    lukaszkepa2003@gmail.com
-                                </a>
-                            </p>
+                        <p className={(email_sended == 1) ? "fail_info" : "none"}>
+                            Skontaktuj się drogą mailową na<br />
+                            <a className="fs-5" href="mailto:lukaszkepa2003@gmail.com">
+                                lukaszkepa2003@gmail.com
+                            </a>
+                        </p>
                     </div>
                 </form>
             </div>

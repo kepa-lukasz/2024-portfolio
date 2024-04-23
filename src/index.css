@@ -13,15 +13,29 @@
     height: 10px;
     border-radius: 10px;
 }
-.underline-animation{
+
+.underline-animation {
     width: 150px;
     animation: underline-appear 0.5s;
 }
+
 @keyframes underline-appear {
-    from{
+    from {
         width: 0px;
     }
-    to{
+
+    to {
         width: 150px;
     }
+}
+
+.custom-bg {
+    background: rgb(151, 114, 252);
+    background: linear-gradient(90deg, rgba(151, 114, 252, 1) 20%, rgba(115, 115, 235, 1) 50%, rgba(151, 114, 252, 1) 80%);
+
+}
+
+.dark .custom-bg {
+    background: rgb(2, 0, 31);
+    background: linear-gradient(90deg, rgba(2, 0, 31, 1) 0%, rgba(9, 9, 121, 1) 52%, rgba(0, 31, 37, 0.9780287114845938) 100%);
 }

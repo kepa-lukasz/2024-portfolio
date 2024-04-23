@@ -16,7 +16,7 @@ const AtomButton = ({ border, shadow, className, text}) => {
                     button.current.classList.remove("button-hover")
                 }}
             >
-                <p className="dark:bg-darkBlue bg-lightPink" >
+                <p className="dark:bg-darkBlue bg-fiolet" >
                     {text}
                 </p>
 

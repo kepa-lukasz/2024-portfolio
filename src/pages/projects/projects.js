@@ -24,13 +24,7 @@ const Projects = () => {
                     name="Techsquare" 
                     link="http://techsquare.pl/"
                     />
-                <ProjectCard
-                    logo={require("../../images/logo/klimat.webp")}
-                    alt="logotyp firmy klimat24.pl"
-                    link="https://klimat-24.pl/"
-                    background="linear-gradient(120deg, rgba(255,88,88,1) 0%, rgba(124,107,255,1) 74%)"
-                    color="rgba(00, 00, 184, 0.6)"
-                    name="KLimat-24" />
+               
                 <ProjectCard
                     logo={require("../../images/logo/logocel194.avif")}
                     alt="logotyp  strony pordóżniczej cel194.pl"
@@ -48,7 +42,13 @@ const Projects = () => {
                     color="rgba(00, 74, 00, 0.6)"
                     name="Pierwsze portfolio"
                 />
-
+                 <ProjectCard
+                    logo={require("../../images/logo/klimat.webp")}
+                    alt="logotyp firmy klimat24.pl"
+                    link="https://klimat-24.pl/"
+                    background="linear-gradient(120deg, rgba(255,88,88,1) 0%, rgba(124,107,255,1) 74%)"
+                    color="rgba(00, 00, 184, 0.6)"
+                    name="KLimat-24" />
 
 
             </div>

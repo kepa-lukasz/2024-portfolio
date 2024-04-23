@@ -31,17 +31,17 @@ const Pages = () => {
 
             <Wrapper
                 
-                className={"bg-fiolet dark:bg-darkSlate"}
+                className={"custom-bg"}
                 child={<Projects />}
             />
             <Wrapper
-                className={"bg-fiolet dark:bg-darkBlue"}
+                className={"bg-rose dark:bg-darkBlue"}
                 child={<AboutMe />}
             />
 
             <Wrapper
                 
-                className={"bg-lightBeige dark:bg-darkGrey"}
+                className={"custom-bg "}
                 child={<Stack />}
             />
             <Wrapper

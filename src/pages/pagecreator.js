@@ -4,6 +4,7 @@ import Projects from "./projects/projects";
 import Stack from "./stack/stack";
 import { useEffect } from "react";
 import ContactForm from "./contact/contact"
+import AboutMe from "./aboutMe/aboutme";
 
 const Pages = () => {
     useEffect(() => {
@@ -32,6 +33,10 @@ const Pages = () => {
                 
                 className={"bg-fiolet dark:bg-darkSlate"}
                 child={<Projects />}
+            />
+            <Wrapper
+                className={"bg-fiolet dark:bg-darkBlue"}
+                child={<AboutMe />}
             />
 
             <Wrapper

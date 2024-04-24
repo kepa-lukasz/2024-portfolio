@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/2024-portfolio/static/css/main.355a8b6c.css",
-    "main.js": "/2024-portfolio/static/js/main.c5b92225.js",
+    "main.css": "/2024-portfolio/static/css/main.f027fe3d.css",
+    "main.js": "/2024-portfolio/static/js/main.3f43a50f.js",
     "static/media/wakacje.avif": "/2024-portfolio/static/media/wakacje.29d7f60af8e06421873d.avif",
     "static/media/logo.png": "/2024-portfolio/static/media/logo.3c48f731d4d23819c2ff.png",
     "static/media/web.avif": "/2024-portfolio/static/media/web.ea1368931d44e2915161.avif",
     "static/media/mozg.avif": "/2024-portfolio/static/media/mozg.fcf5360d47db4164b10c.avif",
     "static/media/logocel194.avif": "/2024-portfolio/static/media/logocel194.34ddabbc36866ca49727.avif",
     "static/media/zhrjpg.avif": "/2024-portfolio/static/media/zhrjpg.6aad2aed0d6d1106004d.avif",
+    "static/media/hacker.webp": "/2024-portfolio/static/media/hacker.f6e3ad2f33b25c446642.webp",
     "static/media/pilka.avif": "/2024-portfolio/static/media/pilka.214ea937579737afb29c.avif",
     "static/media/logoportfolio.webp": "/2024-portfolio/static/media/logoportfolio.f6ac7b92541c452cc1ff.webp",
     "static/media/klimat.webp": "/2024-portfolio/static/media/klimat.5a04d5d34c8acd571db2.webp",
     "static/media/logotechsquare.webp": "/2024-portfolio/static/media/logotechsquare.e06c8aaea37035ce48ec.webp",
     "index.html": "/2024-portfolio/index.html",
-    "main.355a8b6c.css.map": "/2024-portfolio/static/css/main.355a8b6c.css.map",
-    "main.c5b92225.js.map": "/2024-portfolio/static/js/main.c5b92225.js.map"
+    "main.f027fe3d.css.map": "/2024-portfolio/static/css/main.f027fe3d.css.map",
+    "main.3f43a50f.js.map": "/2024-portfolio/static/js/main.3f43a50f.js.map"
   },
   "entrypoints": [
-    "static/css/main.355a8b6c.css",
-    "static/js/main.c5b92225.js"
+    "static/css/main.f027fe3d.css",
+    "static/js/main.3f43a50f.js"
   ]
 }

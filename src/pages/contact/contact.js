@@ -74,7 +74,7 @@ const ContactForm = () => {
                 <form className="mx-5  dark:text-white dark:bg-darkGrey bg-fiolet pt-4 px-1 px-sm-4 rounded-3 w-100"
                     ref={form}
                     onSubmit={sendEmail}
-                    style={{zIndex: 10}}
+                    style={{ zIndex: 10 }}
                 >
                     <div className="w-100 d-flex flex-wrap " >
                         <div class="mb-3 col-12 col-md-6 px-2">
@@ -116,7 +116,11 @@ const ContactForm = () => {
                         <div className={
                             ((email_sended == 0) ? " success" : (email_sended == 1) ? "fail" : null)
                         }>
-                            <AtomButton disabled={button_clicked} text="Wyślij wiadomość" />
+                            <div className="submit-con">
+
+                                <AtomButton disabled={button_clicked} text="Wyślij wiadomość" />
+                            </div>
+                            
                         </div>
                         <p className={(email_sended == 1) ? "fail_info" : "none"}>
                             Skontaktuj się drogą mailową na<br />

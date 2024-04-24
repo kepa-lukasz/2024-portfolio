@@ -4,7 +4,7 @@ import "./projects.css"
 const Projects = () => {
     return (
         <div id="projects" className="w-full pt-4" style={{ maxWidth: "1900px" }}>
-            <p  className="mb-5" ></p>
+            <p className="mb-5" ></p>
             <div className="ps-2 mt-5">
                 <h1 className="ps-11 ms-12 dark:text-white ps-1 text-4xl my-4 font-bold">Projekty</h1>
 
@@ -16,15 +16,15 @@ const Projects = () => {
             <div className=" d-flex flex-wrap justify-content-around align-itmes-center card-container">
 
                 <ProjectCard
-                alert="uwaga, strona jest w budowie! informacje i linki mogą być nieprawidłowe"
+                    alert="uwaga, strona jest w budowie!"
                     logo={require("../../images/logo/logotechsquare.webp")}
                     alt="logotyp firmy techsquare"
                     background="linear-gradient(120deg, rgba(9,0,147,1) 0%, rgba(100,0,132,1) 65%)"
                     color="rgba(50, 14, 99, 0.8)"
-                    name="Techsquare" 
+                    name="Techsquare"
                     link="http://techsquare.pl/"
-                    />
-               
+                />
+
                 <ProjectCard
                     logo={require("../../images/logo/logocel194.avif")}
                     alt="logotyp  strony pordóżniczej cel194.pl"
@@ -42,15 +42,20 @@ const Projects = () => {
                     color="rgba(00, 74, 00, 0.6)"
                     name="Pierwsze portfolio"
                 />
-                 <ProjectCard
+                <ProjectCard
                     logo={require("../../images/logo/klimat.webp")}
                     alt="logotyp firmy klimat24.pl"
                     link="https://klimat-24.pl/"
                     background="linear-gradient(120deg, rgba(255,88,88,1) 0%, rgba(124,107,255,1) 74%)"
                     color="rgba(00, 00, 184, 0.6)"
                     name="KLimat-24" />
-
-
+                <ProjectCard
+                    logo={require("../../images/logo/net.webp")}
+                    alt="logotyp github"
+                    link="https://github.com/kepa-lukasz/c-cms"
+                    background="linear-gradient(58deg, rgba(62,60,199,1) 1%, rgba(159,127,247,1) 100%)"
+                    color="rgba(91,67,171,1)"
+                    name="CMS w C#" />
             </div>
         </div>
     )

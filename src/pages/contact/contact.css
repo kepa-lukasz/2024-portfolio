@@ -124,3 +124,23 @@
     bottom: 15% !important;
     right: -10%;
 }
+
+
+.submit-con{
+    width: fit-content;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px 0px;
+}
+
+.dark .submit-con{
+    width: fit-content;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 0px;
+    transition: 0.5s;
+}
+.submit-con:hover{
+    scale: 1.05;
+    transition: 0.5s;
+}

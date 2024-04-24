@@ -5,6 +5,7 @@
     transition: 0.25s;
     width: 270px;
     max-width: 90vw;
+    
 }
 .project-card:hover{
     transition: 0.25s;
@@ -24,6 +25,7 @@
 }
 .logo img{
     height: 75px;
+    
 }
 .logo{
     position: absolute;
@@ -39,4 +41,7 @@
 .project-card:hover .logo{
     opacity: 0;
     transition: 0.35s;
+}
+.card-con{
+    height: 375px;
 }

@@ -6,10 +6,10 @@ import { Tilt } from 'react-tilt'
 
 const defaultOptions = {
     reverse: true,  // reverse the tilt direction
-    max: 15,     // max tilt rotation (degrees)
+    max: 25,     // max tilt rotation (degrees)
     perspective: 5000,   // Transform perspective, the lower the more extreme the tilt gets.
     scale: 1,    // 2 = 200%, 1.5 = 150%, etc..
-    speed: 500,   // Speed of the enter/exit transition
+    speed: 700,   // Speed of the enter/exit transition
     transition: true,   // Set a transition on enter/exit.
     reset: true,    // If the tilt effect has to be reset on exit.
     easing: "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
@@ -18,7 +18,7 @@ const defaultOptions = {
 const ProjectCard = ({ alt, name, link, background, color, logo, alert, ...rest }) => {
     return (
 
-        <div data-aos-once="true" data-aos="fade-up" className="card-con py-4 mx-0 mb-5">
+        <div data-aos-once="true" data-aos="fade-up" className="card-con py-2 mx-0 mb-5 px-5">
             <Tilt options={defaultOptions} className="h-100">
 
                 <Card

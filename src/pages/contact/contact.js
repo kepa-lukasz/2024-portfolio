@@ -114,7 +114,7 @@ const ContactForm = () => {
                         </div>
 
                         <div className={
-                            ((email_sended == 0) ? " success" : (email_sended == 1) ? "fail" : null)
+                            ((email_sended === 0) ? " success" : (email_sended === 1) ? "fail" : null)
                         }>
                             <div className="submit-con">
 
@@ -122,7 +122,7 @@ const ContactForm = () => {
                             </div>
                             
                         </div>
-                        <p className={(email_sended == 1) ? "fail_info" : "none"}>
+                        <p className={(email_sended === 1) ? "fail_info" : "none"}>
                             Skontaktuj się drogą mailową na<br />
                             <a className="fs-5" href="mailto:lukaszkepa2003@gmail.com">
                                 lukaszkepa2003@gmail.com

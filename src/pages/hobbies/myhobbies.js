@@ -2,6 +2,7 @@ import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import "swiper/css/navigation"
 import 'swiper/css/pagination';
 import './myhobbies.css';
 import 'swiper/css';
@@ -9,7 +10,7 @@ import 'swiper/css/effect-coverflow';
 
 
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 const Hobbies = () => {
     return (
@@ -19,6 +20,7 @@ const Hobbies = () => {
             <div className="underline ms-12 bg-darkGreen dark:bg-lightLemon mb-3"></div>
             <h2 className="ms-6 ps-4 fs-5 dark:text-white ">W tej sekcji napisałem, co lubię robić w wolnych chwilach</h2>
             <div className='d-flex justify-content-center'>
+                   
                 <div className="swiper-con" style={{}}>
                     <Swiper
                         loop={true}
@@ -34,8 +36,8 @@ const Hobbies = () => {
                             modifier: 1,
                             slideShadows: true,
                         }}
-                        pagination={true}
-                        modules={[EffectCoverflow, Pagination]}
+                        pagination={{clickable : true}}
+                        modules={[EffectCoverflow, Navigation, Pagination]}
                         className="mySwiper"
                     >
                         <SwiperSlide>

@@ -13,7 +13,7 @@ const Projects = () => {
                 <h2 className="ms-6 ps-4 fs-5 dark:text-white">W tej sekcji znajdują się wszystkie projekty, które miałem okazję tworzyć, lub współtworzyć</h2>
 
             </div>
-            <div className=" d-flex flex-wrap justify-content-around align-itmes-center card-container">
+            <div className=" d-flex flex-wrap justify-content-center align-itmes-center card-container">
 
                 <ProjectCard
                     alert="uwaga, strona jest w budowie!"
@@ -56,6 +56,13 @@ const Projects = () => {
                     background="linear-gradient(58deg, rgba(62,60,199,1) 1%, rgba(159,127,247,1) 100%)"
                     color="rgba(91,67,171,1)"
                     name="CMS w C#" />
+                <ProjectCard
+                    logo={require("../../images/logo/Logo_Eledyn_pion_białe.png")}
+                    alt="logotyp koła naukowego eledyn"
+                    link="https://jubileusz-eledyn.po.edu.pl/"
+                    background="linear-gradient(45deg, rgba(8,5,38,1) 0%, rgba(38,28,136,1) 100%)"
+                    color="rgba(8,5,38, 0.8)"
+                    name="XXV lat koła Eledyn"/>
             </div>
         </div>
     )

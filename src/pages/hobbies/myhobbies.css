@@ -1,4 +1,5 @@
 .swiper {
+    overflow: visible !important;
     margin-top: 50px;
     width: 100%;
     height: 100%;
@@ -27,13 +28,14 @@
     padding-top: 30px;
     border-radius: 20px;
     margin-bottom: 50px;
+    width: 90%;
 }
 .swiper-pagination-bullet-active{
     background-color: red !important;
 }
 .swiper-pagination-bullet{
     width: 25px;
-    height: 5px;
+    height: 8px;
     border-radius: 3px;
     background-color: #fff;
     opacity: 0.8;
@@ -54,4 +56,20 @@
 }
 h2{
     margin-bottom: 40px !important;
+}
+.swiper-button-next::after, .swiper-button-prev::after{
+    padding: 5px;
+    border-radius: 3px;
+    scale: 0.8;
+    color: black;
+    font-weight: bolder;
+    background-color: #fff;
+}
+.swiper-slide{
+    opacity: 0.8;
+    transition: 2s;
+}
+.swiper-slide-active{
+    transition: 2s;
+    opacity: 1;
 }

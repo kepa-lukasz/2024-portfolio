@@ -19,7 +19,7 @@ const NavBar = () => {
                     <Navbar.Brand href="#">
                         <div className=" nav-img flex dark:text-white ">
                             <a href="#projects">
-                                <img src={require("../../images/logo.png")} alt="logotyp strony, czyli kwadrat z literą Ł"/>
+                                <img style={{filter: "drop-shadow(0 0 3px black)"}} src={require("../../images/logo.webp")} alt="logotyp strony, czyli kwadrat z literą Ł"/>
                             </a>
 
 
@@ -46,33 +46,33 @@ const NavBar = () => {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className=" justify-content-center gap-3 flex-grow-1 align-items-start text-start">
-                                <div className="d-block d-md-none w-full d-flex justify-content-center" >
+                                <div className="d-block d-lg-none w-full d-flex justify-content-center" >
                                     <ThemeSwitch />
                                 </div>
 
-                                <a onClick={()=>{setShow(false)}} href="#projects" className='pt-1 text-black m-auto m-md-0'>
+                                <a onClick={()=>{setShow(false)}} href="#projects" className='pt-1 text-black m-auto m-lg-0'>
                                     <AtomButton text="Projekty" />
                                 </a>
 
-                                <a onClick={()=>{setShow(false)}} href="#aboutme" className='pt-1 text-black m-auto m-md-0'>
+                                <a onClick={()=>{setShow(false)}} href="#aboutme" className='pt-1 text-black m-auto m-lg-0'>
                                     <AtomButton text="O mnie" />
                                 </a>
 
 
-                                <a onClick={()=>{setShow(false)}} href="#skills" className='pt-1 text-black  m-auto m-md-0'>
+                                <a onClick={()=>{setShow(false)}} href="#skills" className='pt-1 text-black  m-auto m-lg-0'>
                                     <AtomButton text="Umiejętności" />
                                 </a>
 
-                                <a onClick={()=>{setShow(false)}} href="#hobby" className='pt-1 text-black  m-auto m-md-0'>
+                                <a onClick={()=>{setShow(false)}} href="#hobby" className='pt-1 text-black  m-auto m-lg-0'>
                                     <AtomButton text="Hobby" />
                                 </a>
 
-                                <a onClick={()=>{setShow(false)}} href="#contact" className='pt-1 text-black  m-auto m-md-0'>
+                                <a onClick={()=>{setShow(false)}} href="#contact" className='pt-1 text-black  m-auto m-lg-0'>
                                     <AtomButton text="Kontakt" />
                                 </a>
 
                             </Nav>
-                            <div className="d-none d-md-block" >
+                            <div className="d-none d-lg-block" >
                                 <ThemeSwitch />
                             </div>
 
